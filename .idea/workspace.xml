@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac267507-8853-4e77-9e6b-016a1cc18497" name="Changes" comment="nacitani mistnosti ze souboru">
+    <list default="true" id="ac267507-8853-4e77-9e6b-016a1cc18497" name="Changes" comment="nacitani mistnosti ze souboru 2.0">
+      <change afterPath="$PROJECT_DIR$/src/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Console.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pohyb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mapa/SvetovaMapa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mapa/SvetovaMapa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mapa/Mistnost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mistnost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mapa/SvetovaMapa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SvetovaMapa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mapa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/mapa.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +22,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -51,7 +58,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/sakal/IdeaProjects/home-Work/dum_posledni_nadeje",
+    "last_opened_file_path": "D:/Java/Cviceni2-5",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -67,6 +74,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sakal\IdeaProjects\home-Work\dum_posledni_nadeje" />
       <recent name="C:\Users\sakal\IdeaProjects\home-Work\dum_posledni_nadeje\src" />
       <recent name="C:\Users\sakal\IdeaProjects\home-Work\dum_posledni_nadeje\src\Svet" />
     </key>
@@ -89,7 +97,7 @@
       <updated>1740395058770</updated>
       <workItem from="1740395059790" duration="9452000" />
       <workItem from="1740501715124" duration="14481000" />
-      <workItem from="1740575533932" duration="6946000" />
+      <workItem from="1740575533932" duration="28837000" />
     </task>
     <task id="LOCAL-00001" summary="nacitani mistnosti ze souboru">
       <option name="closed" value="true" />
@@ -99,14 +107,34 @@
       <option name="project" value="LOCAL" />
       <updated>1740580254474</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="nacitani mistnosti ze souboru 2.0">
+      <option name="closed" value="true" />
+      <created>1740582996761</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740582996761</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="nacitani mistnosti ze souboru" />
-    <option name="LAST_COMMIT_MESSAGE" value="nacitani mistnosti ze souboru" />
+    <MESSAGE value="nacitani mistnosti ze souboru 2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="nacitani mistnosti ze souboru 2.0" />
   </component>
 </project>
