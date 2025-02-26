@@ -1,42 +1,47 @@
-package Mapa;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
 
 public class SvetovaMapa {
 private HashMap<Mistnost, ArrayList<Mistnost>> svet = new HashMap<>();
 private String tvojePozice;
 
+    public SvetovaMapa() {
+        nactitaniMapy();
+    }
+
     public boolean nactitaniMapy(){
         try {
             BufferedReader br = new BufferedReader(new FileReader("mapa.csv"));
-            String line = br.readLine();
+            String line;
 
-            Mistnost mistnost = new Mistnost();
-            while(line != null ){
+
+            while((line = br.readLine())  != null ){
 
                 String[] rozdelene = line.split(",");
                 Mistnost m = new Mistnost(rozdelene[0]);
                 ArrayList<Mistnost> sousedniMistnosti = new ArrayList<>();
 
-                for (int i = 0; i < rozdelene.length; i++) {
-                    sousedniMistnosti.add(new Mistnost(rozdelene[i]));
+                for ( String nazevMistnosti: Arrays.copyOfRange(rozdelene, 1, rozdelene.length)) {
+                    sousedniMistnosti.add(new Mistnost(nazevMistnosti));
                 }
 
-                svet.put(mistnost, sousedniMistnosti);
+                svet.put(m, sousedniMistnosti);
             }
-            br.close();
-            return true;
+
         } catch (IOException e) {
             e.printStackTrace();
-            return false;
+
         }
 
-
+return true;
+    }
+    public ArrayList<Mistnost> sousedniMistnost(Mistnost m){
+        return svet.getOrDefault(m, new ArrayList<>());
     }
 
-
+    public HashMap<Mistnost, ArrayList<Mistnost>> getSvet() {
+        return svet;
+    }
 }
