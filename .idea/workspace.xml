@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac267507-8853-4e77-9e6b-016a1cc18497" name="Changes" comment="nacitani mistnosti ze souboru 2.0">
-      <change afterPath="$PROJECT_DIR$/src/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Console.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pohyb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mapa/Mistnost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mistnost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mapa/SvetovaMapa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SvetovaMapa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mapa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/mapa.csv" afterDir="false" />
+    <list default="true" id="ac267507-8853-4e77-9e6b-016a1cc18497" name="Changes" comment="nevim co to jeale je to tady">
+      <change beforePath="$PROJECT_DIR$/src/Mapa/Mistnost.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +90,7 @@
       <updated>1740395058770</updated>
       <workItem from="1740395059790" duration="9452000" />
       <workItem from="1740501715124" duration="14481000" />
-      <workItem from="1740575533932" duration="28837000" />
+      <workItem from="1740575533932" duration="29546000" />
     </task>
     <task id="LOCAL-00001" summary="nacitani mistnosti ze souboru">
       <option name="closed" value="true" />
@@ -115,7 +108,71 @@
       <option name="project" value="LOCAL" />
       <updated>1740582996761</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="soubor jsem jenom presunul na spravne misto">
+      <option name="closed" value="true" />
+      <created>1740605591860</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740605591860</updated>
+    </task>
+    <task id="LOCAL-00004" summary="v metode main se spousti program">
+      <option name="closed" value="true" />
+      <created>1740605615997</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1740605615997</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Treda pomoci ktere vytvarime sve mistnosti">
+      <option name="closed" value="true" />
+      <created>1740605682270</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1740605682270</updated>
+    </task>
+    <task id="LOCAL-00006" summary="interface Command">
+      <option name="closed" value="true" />
+      <created>1740605714941</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1740605714941</updated>
+    </task>
+    <task id="LOCAL-00007" summary="v konzoli zpracovavame prikazy od hrace">
+      <option name="closed" value="true" />
+      <created>1740605770929</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1740605770929</updated>
+    </task>
+    <task id="LOCAL-00008" summary="tady se rese pohybhrace v mkistnotech, tak aby hrac se mohl pohybovat podle pravidel">
+      <option name="closed" value="true" />
+      <created>1740605894075</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1740605894075</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Nacitame mapu ze souboru do hry">
+      <option name="closed" value="true" />
+      <created>1740605987114</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1740605987114</updated>
+    </task>
+    <task id="LOCAL-00010" summary="nevim co to jeale je to tady">
+      <option name="closed" value="true" />
+      <created>1740606024617</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1740606024617</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +192,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="nacitani mistnosti ze souboru" />
     <MESSAGE value="nacitani mistnosti ze souboru 2.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="nacitani mistnosti ze souboru 2.0" />
+    <MESSAGE value="soubor jsem jenom presunul na spravne misto" />
+    <MESSAGE value="v metode main se spousti program" />
+    <MESSAGE value="Treda pomoci ktere vytvarime sve mistnosti" />
+    <MESSAGE value="interface Command" />
+    <MESSAGE value="v konzoli zpracovavame prikazy od hrace" />
+    <MESSAGE value="tady se rese pohybhrace v mkistnotech, tak aby hrac se mohl pohybovat podle pravidel" />
+    <MESSAGE value="Nacitame mapu ze souboru do hry" />
+    <MESSAGE value="nevim co to jeale je to tady" />
+    <option name="LAST_COMMIT_MESSAGE" value="nevim co to jeale je to tady" />
   </component>
 </project>
