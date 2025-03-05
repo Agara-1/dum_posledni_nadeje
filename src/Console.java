@@ -1,15 +1,20 @@
+import Command.Command;
+import Mapa.Mistnost;
+import Mapa.Pohyb;
+import Mapa.SvetovaMapa;
+
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Scanner;
 
 public class Console {
     private boolean exit = false;
-    private Scanner scanner = new Scanner(System.in);
     private HashMap<String, Command> prikazy = new HashMap<>();
     private SvetovaMapa sm = new SvetovaMapa();
 
 public void inicializace(){
     prikazy.put("jdi", new Pohyb(new Mistnost("Chodba")));
+
 }
 private Scanner sc = new Scanner(System.in);
 

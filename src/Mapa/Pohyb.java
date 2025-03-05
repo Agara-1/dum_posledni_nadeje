@@ -1,4 +1,7 @@
-import java.util.ArrayList;
+package Mapa;
+
+import Command.Command;
+
 import java.util.Scanner;
 
 public class Pohyb implements Command {

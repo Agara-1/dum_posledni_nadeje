@@ -1,3 +1,5 @@
+package Mapa;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -5,7 +7,7 @@ import java.util.HashMap;
 
 public class SvetovaMapa {
 private HashMap<Mistnost, ArrayList<Mistnost>> svet = new HashMap<>();
-private String tvojePozice;
+
 
     public SvetovaMapa() {
         nactitaniMapy();

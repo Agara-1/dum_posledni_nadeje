@@ -1,8 +1,15 @@
+package Mapa;
+
+import Postavy.Postava;
+import Veci.Predmet;
+
+import java.util.ArrayList;
 import java.util.Objects;
 
 public class Mistnost {
    private String nazev;
-
+private Postava postava;
+private ArrayList<Predmet> predmetyVMistnosti;
 
    public Mistnost() {
    }
