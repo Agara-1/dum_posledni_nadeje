@@ -39,6 +39,17 @@ private HashMap<Mistnost, ArrayList<Mistnost>> svet = new HashMap<>();
 
 return true;
     }
+
+    public Mistnost getMistnost(String nazevMistnosti) {
+        for (Mistnost m : svet.keySet()) {
+            if (m.getNazev().equalsIgnoreCase(nazevMistnosti)) {
+                return m;
+            }
+        }
+        return null;
+    }
+
+
     public ArrayList<Mistnost> sousedniMistnost(Mistnost m){
         return svet.getOrDefault(m, new ArrayList<>());
     }
@@ -46,4 +57,5 @@ return true;
     public HashMap<Mistnost, ArrayList<Mistnost>> getSvet() {
         return svet;
     }
+
 }

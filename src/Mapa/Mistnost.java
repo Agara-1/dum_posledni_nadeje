@@ -8,18 +8,40 @@ import java.util.Objects;
 
 public class Mistnost {
    private String nazev;
-private Postava postava;
+
 private ArrayList<Predmet> predmetyVMistnosti;
+private ArrayList<Postava> postavyVMistnosti;
 
    public Mistnost() {
    }
 
    public Mistnost(String nazev) {
       this.nazev = nazev;
+      this.postavyVMistnosti = new ArrayList<>();
+      this.predmetyVMistnosti = new ArrayList<>();
    }
 
+   
    public String getNazev() {
       return nazev;
+   }
+   public void pridaniPostavy(Postava po) {
+      postavyVMistnosti.add(po);
+
+   }
+public void pridatPredmet(Predmet p){
+      predmetyVMistnosti.add(p);
+   }
+public void odstranitPredmetZMistnosti(Predmet p){
+      predmetyVMistnosti.remove(p);
+}
+
+   public ArrayList<Predmet> getPredmetyVMistnosti() {
+      return predmetyVMistnosti;
+   }
+
+   public ArrayList<Postava> getPostavyVMistnosti() {
+      return postavyVMistnosti;
    }
 
    @Override

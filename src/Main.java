@@ -1,3 +1,5 @@
+import Source.Console;
+
 import java.io.IOException;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
