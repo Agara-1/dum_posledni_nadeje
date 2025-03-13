@@ -4,31 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac267507-8853-4e77-9e6b-016a1cc18497" name="Changes" comment="nevim co to jeale je to tady">
-      <change afterPath="$PROJECT_DIR$/src/Command/Mluv.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Command/Pouzij.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Command/Pruzkum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Command/Utok.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Command/Vezmi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Hrac.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Postavy/Kucharka.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Postavy/Lekarka.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Postavy/Postava.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Postavy/Psycholog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Postavy/Vedec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Postavy/Vezen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Veci/Akumulatory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Veci/Jidlo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Veci/Klice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Veci/Leky.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Veci/Predmet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Veci/Zbran.java" afterDir="false" />
+    <list default="true" id="ac267507-8853-4e77-9e6b-016a1cc18497" name="Changes" comment="drobne upravy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Console.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mistnost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mapa/Mistnost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pohyb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mapa/Pohyb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SvetovaMapa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mapa/SvetovaMapa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Console.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +93,9 @@
       <workItem from="1740501715124" duration="14481000" />
       <workItem from="1740575533932" duration="29625000" />
       <workItem from="1741018073610" duration="10610000" />
-      <workItem from="1741199815432" duration="394000" />
+      <workItem from="1741199815432" duration="1211000" />
+      <workItem from="1741714616029" duration="9261000" />
+      <workItem from="1741766914148" duration="37214000" />
     </task>
     <task id="LOCAL-00001" summary="nacitani mistnosti ze souboru">
       <option name="closed" value="true" />
@@ -205,7 +185,47 @@
       <option name="project" value="LOCAL" />
       <updated>1740606072314</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="doplneni trid, promennych a hlavicek metod">
+      <option name="closed" value="true" />
+      <created>1741200957493</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1741200957493</updated>
+    </task>
+    <task id="LOCAL-00013" summary="doplneni funkce ruznych predmetu">
+      <option name="closed" value="true" />
+      <created>1741814652725</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1741814652725</updated>
+    </task>
+    <task id="LOCAL-00014" summary="doplneni postav a funkci ktere delaji">
+      <option name="closed" value="true" />
+      <created>1741814734627</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1741814734627</updated>
+    </task>
+    <task id="LOCAL-00015" summary="doplneni prikazu a jejich funkci">
+      <option name="closed" value="true" />
+      <created>1741814793071</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1741814793071</updated>
+    </task>
+    <task id="LOCAL-00016" summary="drobne upravy">
+      <option name="closed" value="true" />
+      <created>1741814813260</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1741814813260</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +253,11 @@
     <MESSAGE value="tady se rese pohybhrace v mkistnotech, tak aby hrac se mohl pohybovat podle pravidel" />
     <MESSAGE value="Nacitame mapu ze souboru do hry" />
     <MESSAGE value="nevim co to jeale je to tady" />
-    <option name="LAST_COMMIT_MESSAGE" value="nevim co to jeale je to tady" />
+    <MESSAGE value="doplneni trid, promennych a hlavicek metod" />
+    <MESSAGE value="doplneni funkce ruznych predmetu" />
+    <MESSAGE value="doplneni postav a funkci ktere delaji" />
+    <MESSAGE value="doplneni prikazu a jejich funkci" />
+    <MESSAGE value="drobne upravy" />
+    <option name="LAST_COMMIT_MESSAGE" value="drobne upravy" />
   </component>
 </project>
