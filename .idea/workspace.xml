@@ -4,7 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac267507-8853-4e77-9e6b-016a1cc18497" name="Changes" comment="console s prikazy" />
+    <list default="true" id="ac267507-8853-4e77-9e6b-016a1cc18497" name="Changes" comment="console s prikazy">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command/Mluv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/Mluv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command/Pouzij.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/Pouzij.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command/Pruzkum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/Pruzkum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command/Utok.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/Utok.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command/Vezmi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/Vezmi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mapa/Mistnost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mapa/Mistnost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mapa/Pohyb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mapa/Pohyb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mapa/SvetovaMapa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mapa/SvetovaMapa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Postavy/Hrac.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Postavy/Hrac.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Postavy/Kucharka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Postavy/Kucharka.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Postavy/Lekarka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Postavy/Lekarka.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Postavy/Postava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Postavy/Postava.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Postavy/Psycholog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Postavy/Psycholog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Postavy/Vedec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Postavy/Vedec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Postavy/Vezen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Postavy/Vezen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Source/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Source/Console.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Veci/Akumulatory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Veci/Akumulatory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Veci/Jidlo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Veci/Jidlo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Veci/Klice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Veci/Klice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Veci/Leky.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Veci/Leky.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Veci/Zbran.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Veci/Zbran.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +57,7 @@
   }
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -45,27 +68,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Java/Cviceni2-5&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/sakal/IdeaProjects/home-Work/dum_posledni_nadeje/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Java/Cviceni2-5",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/sakal/IdeaProjects/home-Work/dum_posledni_nadeje/src/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sakal\IdeaProjects\home-Work\dum_posledni_nadeje" />
@@ -97,6 +120,10 @@
       <workItem from="1741714616029" duration="9261000" />
       <workItem from="1741766914148" duration="37214000" />
       <workItem from="1741874544767" duration="269000" />
+      <workItem from="1742111213053" duration="33367000" />
+      <workItem from="1742226342051" duration="13725000" />
+      <workItem from="1742319593806" duration="11227000" />
+      <workItem from="1742395258407" duration="13192000" />
     </task>
     <task id="LOCAL-00001" summary="nacitani mistnosti ze souboru">
       <option name="closed" value="true" />
@@ -234,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741874555747</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="console s prikazy">
+      <option name="closed" value="true" />
+      <created>1742112246186</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1742112246187</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

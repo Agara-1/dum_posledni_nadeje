@@ -5,19 +5,18 @@ import Mapa.SvetovaMapa;
 
 import javax.sound.midi.MidiSystem;
 import java.util.ArrayList;
+import java.util.Random;
 
 public abstract class Postava {
-    protected String jmeno;
-    protected String povolani;
-    protected String text;
-    protected Mistnost mistnost;
-    private SvetovaMapa sm ;
 
+    private String jmeno;
+    private String povolani;
+    private Random rnd = new Random();
+    private Mistnost mistnost;
 
-    public Postava(String jmeno, String povolani, String text, Mistnost mistnost) {
+    public Postava(String jmeno, String popis, Mistnost mistnost) {
         this.jmeno = jmeno;
         this.povolani = povolani;
-        this.text = text;
         this.mistnost = mistnost;
     }
 
@@ -25,16 +24,15 @@ public abstract class Postava {
         return jmeno;
     }
 
-    public String getPovolani() {
-        return povolani;
+    public Mistnost getMistnost() {
+        return mistnost;
     }
 
-    public String getText() {
-        return text;
+    public String mluv() {
+        String[] hlasky = getHlasky();
+        return hlasky[rnd.nextInt(hlasky.length)];
+
     }
+    protected abstract String[] getHlasky();
 
-
-
-    public void rozhovor(){
-    }
 }
