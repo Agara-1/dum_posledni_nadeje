@@ -12,6 +12,13 @@ public class Zbran extends Predmet {
 
     @Override
     public String pouziti(Mistnost m, Hrac h) {
+        h.getInventar().remove(this);
         return "pokud chces pouzit zbran, musis ji pouzit s prikazem utok";
+
+    }
+
+    @Override
+    public String toString() {
+        return "Macete";
     }
 }

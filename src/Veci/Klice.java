@@ -3,8 +3,10 @@ import Postavy.Hrac;
 import Mapa.Mistnost;
 
 public class  Klice extends Predmet {
+
+
    public Klice(String nazev) {
-      super("Klic");
+      super("Klice");
    }
 
    public void puziti(){
@@ -13,9 +15,18 @@ public class  Klice extends Predmet {
 
    @Override
    public String pouziti(Mistnost m, Hrac h) {
+      m = h.getMojePozice();
       if (m.getNazev().equals("Pokoj1")) {
+       //  m.otevritTrezor();
          return "Odemkl jsi trezor!";
+
       }
+
       return "Tady tenhle klíč nejde pouzit.";
+   }
+
+   @Override
+   public String toString() {
+      return "Klice";
    }
 }
