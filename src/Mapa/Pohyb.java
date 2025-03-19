@@ -5,39 +5,33 @@ import Postavy.Hrac;
 
 import java.util.Scanner;
 
+
+
 public class Pohyb implements Command {
+    private Scanner sc = new Scanner(System.in);
+    private SvetovaMapa sm;
+    private Hrac hrac;
 
-private Scanner sc = new Scanner(System.in);
-SvetovaMapa sm = new SvetovaMapa();
-private Hrac hrac;
-public Pohyb(SvetovaMapa sm, Hrac hrac) {
-    this.hrac = hrac;
-}
-
-
-
-
-@Override
-public String execute(){
-    Mistnost mojePozice = hrac.getMojePozice();
-    System.out.println("Teď jsi v: " + mojePozice);
-    System.out.println( sm.sousedniMistnost(mojePozice));
-    System.out.println("Kam chcete jit");
-    String volba = sc.nextLine();
-
-    for (Mistnost m : sm.sousedniMistnost(mojePozice)) {
-        if(m.getNazev().equalsIgnoreCase(volba)){
-            mojePozice = m;
-            return "presunuli jste se do: " + mojePozice;
-        }
-
-
+    public Pohyb(SvetovaMapa sm, Hrac hrac) {
+        this.sm = sm;
+        this.hrac = hrac;
     }
-    return "nejde tam jit";
-}
 
     @Override
-    public boolean exit() {
-        return false;
+    public String execute() {
+        Mistnost mojePozice = hrac.getMojePozice();
+        System.out.println("Teď jsi v: " + mojePozice);
+        System.out.println("Možné směry: " + sm.sousedniMistnost(mojePozice));
+        System.out.print("Kam chcete jít? ");
+        String volba = sc.nextLine().trim();
+
+        Mistnost novaMistnost = sm.getMistnost(volba);
+        if (novaMistnost != null && sm.sousedniMistnost(mojePozice).contains(novaMistnost)) {
+            hrac.setMojePozice(novaMistnost);
+            novaMistnost.vstoupit(hrac);
+            return "Přesunuli jste se do: " + novaMistnost;
+        }
+        return "Tam nejde jít.";
     }
+
 }

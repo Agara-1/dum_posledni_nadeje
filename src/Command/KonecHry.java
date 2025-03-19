@@ -15,8 +15,5 @@ public class KonecHry implements Command {
         return "Hra byla ukoncena";
     }
 
-    @Override
-    public boolean exit() {
-        return true;
-    }
+
 }

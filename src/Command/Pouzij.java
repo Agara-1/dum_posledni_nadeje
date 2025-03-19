@@ -4,9 +4,12 @@ import Mapa.Mistnost;
 import Postavy.Hrac;
 import Veci.Predmet;
 
+
 import java.util.Scanner;
 
 public class Pouzij implements Command {
+
+
     private Hrac hrac;
     private Mistnost mistnost;
     private Scanner sc;
@@ -21,12 +24,12 @@ public class Pouzij implements Command {
 
     @Override
     public String execute() {
-        if(hrac.getPredmety().isEmpty()){
+        if(hrac.getInventar().isEmpty()){
             return "nemas nic v inventari";
         }else{
-            System.out.println("Jaky z predmetu chces pouzit? " + hrac.getPredmety());
+            System.out.println("Jaky z predmetu chces pouzit? " + hrac.getInventar());
             String vyber = sc.nextLine();
-            for(Predmet p : hrac.getPredmety()){
+            for(Predmet p : hrac.getInventar()){
                 if(p.getNazev().equalsIgnoreCase(vyber)){
                     return p.pouziti(mistnost , hrac);
                 }
@@ -35,8 +38,5 @@ public class Pouzij implements Command {
         return "tento predmet nemas v inventari";
     }
 
-    @Override
-    public boolean exit() {
-        return false;
-    }
+
 }

@@ -4,10 +4,11 @@ import Mapa.Mistnost;
 import Postavy.*;
 
 
-import java.util.ArrayList;
+
 import java.util.Scanner;
 
 public class Mluv implements Command {
+
     private Scanner sc;
     private Hrac hrac;
 
@@ -20,27 +21,26 @@ public class Mluv implements Command {
     @Override
     public String execute() {
         Mistnost mojePozice = hrac.getMojePozice();
-        ArrayList<Postava> postavy = mojePozice.getPostavyVMistnosti();
 
-        if(mojePozice.getPostavyVMistnosti().isEmpty()){
-            return "v teto mistnosti nikdo neni";
-
-        }
-
-        System.out.println("vyberte postavu s kterou chcete mluvit" + mojePozice.getPostavyVMistnosti());
-        String jmenoPostavy = sc.nextLine().trim();
-
-        for (Postava p : mojePozice.getPostavyVMistnosti()) {
-            if(p.getJmeno().trim().equals(jmenoPostavy.trim())){
-                return p.getJmeno() + " : " + p.getText();
+        if (!mojePozice.getPostavyVMistnosti().isEmpty()) {
+            System.out.println("Vyberte postavu, se kterou chcete mluvit: ");
+            for (Postava p : mojePozice.getPostavyVMistnosti()) {
+                System.out.println("- " + p.getJmeno());
             }
+
+            String jmenoPostavy = sc.nextLine().trim();
+
+            for (Postava p : mojePozice.getPostavyVMistnosti()) {
+                if (p.getJmeno().equalsIgnoreCase(jmenoPostavy)) {
+                    return p.getJmeno() + ": " + p.mluv();
+                }
+            }
+        } else if (mojePozice.getPostavyVMistnosti().isEmpty()) {
+            return "V této místnosti nikdo není.";
         }
 
-        return "tato postava zde neni";
+        return "Tato postava zde není.";
     }
 
-    @Override
-    public boolean exit() {
-        return false;
-    }
+
 }
