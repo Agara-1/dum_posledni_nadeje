@@ -6,9 +6,6 @@ public class Zbran extends Predmet {
         super("Macete");
     }
 
-    public void puziti(){
-
-    }
 
     @Override
     public String pouziti(Mistnost m, Hrac h) {

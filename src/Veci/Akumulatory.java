@@ -9,9 +9,7 @@ public class Akumulatory extends Predmet {
         super(nazev);
     }
 
-    public void puziti(){
 
-    }
 
     @Override
     public String pouziti(Mistnost m, Hrac h) {

@@ -13,7 +13,7 @@ public class Pouzij implements Command {
     private Hrac hrac;
     private Mistnost mistnost;
     private Scanner sc;
-
+    private Predmet predmet;
 
     public Pouzij(Hrac hrac) {
         this.sc = new Scanner(System.in);
@@ -24,6 +24,7 @@ public class Pouzij implements Command {
 
     @Override
     public String execute() {
+        Mistnost mojePozice = hrac.getMojePozice();
         if(hrac.getInventar().isEmpty()){
             return "nemas nic v inventari";
         }else{

@@ -7,9 +7,7 @@ public class Jidlo extends Predmet {
         super("Konzerva");
     }
 
-    public void puziti(){
 
-    }
 
     @Override
     public String pouziti(Mistnost m, Hrac h) {

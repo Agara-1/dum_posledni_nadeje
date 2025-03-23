@@ -9,15 +9,13 @@ public class  Klice extends Predmet {
       super("Klice");
    }
 
-   public void puziti(){
 
-   }
 
    @Override
    public String pouziti(Mistnost m, Hrac h) {
       m = h.getMojePozice();
       if (m.getNazev().equals("Pokoj1")) {
-       //  m.otevritTrezor();
+         m.otevritTrezor();
          return "Odemkl jsi trezor!";
 
       }

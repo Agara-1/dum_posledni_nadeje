@@ -4,28 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac267507-8853-4e77-9e6b-016a1cc18497" name="Changes" comment="console s prikazy">
+    <list default="true" id="ac267507-8853-4e77-9e6b-016a1cc18497" name="Changes" comment="v consoli se mi vypise uvitani a podminky hry&#10;a drobne upravy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/Mluv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/Mluv.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Command/Pouzij.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/Pouzij.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Command/Pruzkum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/Pruzkum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/Utok.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/Utok.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Command/Vezmi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/Vezmi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mapa/Mistnost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mapa/Mistnost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mapa/Pohyb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mapa/Pohyb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mapa/SvetovaMapa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mapa/SvetovaMapa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Postavy/Hrac.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Postavy/Hrac.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Postavy/Kucharka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Postavy/Kucharka.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Postavy/Lekarka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Postavy/Lekarka.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Postavy/Postava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Postavy/Postava.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Postavy/Psycholog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Postavy/Psycholog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Postavy/Vedec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Postavy/Vedec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Postavy/Vezen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Postavy/Vezen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Source/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Source/Console.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Veci/Akumulatory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Veci/Akumulatory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Veci/Jidlo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Veci/Jidlo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Veci/Klice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Veci/Klice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Veci/Leky.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Veci/Leky.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Veci/Zbran.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Veci/Zbran.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +62,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Java/Cviceni2-5",
+    "last_opened_file_path": "D:/dum_posledni_nadeje-git",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -123,7 +110,8 @@
       <workItem from="1742111213053" duration="33367000" />
       <workItem from="1742226342051" duration="13725000" />
       <workItem from="1742319593806" duration="11227000" />
-      <workItem from="1742395258407" duration="13192000" />
+      <workItem from="1742395258407" duration="14190000" />
+      <workItem from="1742749504474" duration="2851000" />
     </task>
     <task id="LOCAL-00001" summary="nacitani mistnosti ze souboru">
       <option name="closed" value="true" />
@@ -269,7 +257,47 @@
       <option name="project" value="LOCAL" />
       <updated>1742112246187</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="doplneni predmetu a jejich pouziti">
+      <option name="closed" value="true" />
+      <created>1742419832782</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1742419832782</updated>
+    </task>
+    <task id="LOCAL-00020" summary="doplneni textu pro dialog s hracem">
+      <option name="closed" value="true" />
+      <created>1742419892188</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1742419892188</updated>
+    </task>
+    <task id="LOCAL-00021" summary="prikazy upraveny podle noveho nacitani mapy + doplnene nove funkce">
+      <option name="closed" value="true" />
+      <created>1742420065196</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1742420065196</updated>
+    </task>
+    <task id="LOCAL-00022" summary="nove nacitani mapy kvuli pridavani predmetu do pokoju a pak jejich sebrani">
+      <option name="closed" value="true" />
+      <created>1742420138069</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1742420138069</updated>
+    </task>
+    <task id="LOCAL-00023" summary="v consoli se mi vypise uvitani a podminky hry&#10;a drobne upravy">
+      <option name="closed" value="true" />
+      <created>1742420343160</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1742420343160</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,6 +331,11 @@
     <MESSAGE value="doplneni prikazu a jejich funkci" />
     <MESSAGE value="drobne upravy" />
     <MESSAGE value="console s prikazy" />
-    <option name="LAST_COMMIT_MESSAGE" value="console s prikazy" />
+    <MESSAGE value="doplneni predmetu a jejich pouziti" />
+    <MESSAGE value="doplneni textu pro dialog s hracem" />
+    <MESSAGE value="prikazy upraveny podle noveho nacitani mapy + doplnene nove funkce" />
+    <MESSAGE value="nove nacitani mapy kvuli pridavani predmetu do pokoju a pak jejich sebrani" />
+    <MESSAGE value="v consoli se mi vypise uvitani a podminky hry&#10;a drobne upravy" />
+    <option name="LAST_COMMIT_MESSAGE" value="v consoli se mi vypise uvitani a podminky hry&#10;a drobne upravy" />
   </component>
 </project>
