@@ -2,6 +2,7 @@ package Veci;
 import Postavy.Hrac;
 import Mapa.Mistnost;
 
+//Třída reprezentující akumulátory v inventáři. Akumulátory mohou být použity k zapnutí rádia v místnosti "Sklep".
 public class Akumulatory extends Predmet {
     public static boolean radioZapnuto = false;
 
@@ -9,12 +10,13 @@ public class Akumulatory extends Predmet {
         super(nazev);
     }
 
-
-
+//Metoda pro použití akumulátorů.
+//Pokud je hráč v místnosti "Sklep", akumulátory zapnou rádio a zobrazí se zpráva s nouzovým vysíláním.
     @Override
     public String pouziti(Mistnost m, Hrac h) {
         m = h.getMojePozice();
         if (m.getNazev().equals("Sklep")) {
+            h.getInventar().remove(this);
             radioZapnuto = true;
             return """
             Zapojil jsi akumulátory... 
@@ -28,8 +30,9 @@ public class Akumulatory extends Predmet {
 
             Rádio znovu utichlo. Naděje nebo jen další past? 
             """;
+
         }
-        h.getInventar().remove(this);
+
         return "Zde nemůžeš použít akumulátory.";
     }
 

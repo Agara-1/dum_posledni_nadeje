@@ -2,8 +2,9 @@ package Postavy;
 
 import Mapa.Mistnost;
 
-import java.util.ArrayList;
 
+//Třída reprezentující postavu vědce.
+//Vědec poskytuje hráči znepokojivé informace a teorie o světě kolem.
 public class Vedec extends Postava {
     public Vedec(String jmeno, String povolani, String text, Mistnost mistnost) {
         super( "Rober", text, mistnost);
@@ -14,6 +15,7 @@ public class Vedec extends Postava {
         return "Vedec";
     }
 
+    //Vrací seznam hlášek vědce.
     @Override
     protected String[] getHlasky() {
         return new String[]{

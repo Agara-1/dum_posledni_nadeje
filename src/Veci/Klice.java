@@ -2,6 +2,7 @@ package Veci;
 import Postavy.Hrac;
 import Mapa.Mistnost;
 
+//Třída reprezentující klíče, které lze použít k otevření trezoru.
 public class  Klice extends Predmet {
 
 
@@ -9,12 +10,12 @@ public class  Klice extends Predmet {
       super("Klice");
    }
 
-
-
+//Použití klíče v aktuální místnosti hráče.
    @Override
    public String pouziti(Mistnost m, Hrac h) {
       m = h.getMojePozice();
       if (m.getNazev().equals("Pokoj1")) {
+         h.getInventar().remove(this);
          m.otevritTrezor();
          return "Odemkl jsi trezor!";
 

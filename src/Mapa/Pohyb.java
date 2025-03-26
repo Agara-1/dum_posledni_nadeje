@@ -6,7 +6,8 @@ import Postavy.Hrac;
 import java.util.Scanner;
 
 
-
+//Třída pro realizaci pohybu hráče mezi místnostmi v rámci světové mapy.
+// Umožňuje hráči vybrat si směr, do kterého se chce přesunout, a provádí přesun, pokud je to možné.
 public class Pohyb implements Command {
     private Scanner sc = new Scanner(System.in);
     private SvetovaMapa sm;
@@ -17,6 +18,11 @@ public class Pohyb implements Command {
         this.hrac = hrac;
     }
 
+    /* Metoda pro vykonání příkazu pohybu.
+       Vyzve hráče, aby zadal směr (název místnosti), do které chce přejít.
+       Pokud je směr platný a sousedí s aktuální místností, hráč se přesune do nové místnosti.
+       Pokud směr není platný, zobrazí se chybová zpráva.
+    */
     @Override
     public String execute() {
         Mistnost mojePozice = hrac.getMojePozice();

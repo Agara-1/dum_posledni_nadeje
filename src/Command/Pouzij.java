@@ -3,10 +3,10 @@ package Command;
 import Mapa.Mistnost;
 import Postavy.Hrac;
 import Veci.Predmet;
-
-
 import java.util.Scanner;
 
+//Třída implementující příkaz pro použití předmětu z inventáře hráče.
+// * Tato třída umožňuje hráči vybrat předmět z inventáře a použít ho v aktuální místnosti.
 public class Pouzij implements Command {
 
 
@@ -21,7 +21,10 @@ public class Pouzij implements Command {
         this.hrac = hrac;
     }
 
-
+    /* Metoda pro vykonání příkazu použití předmětu z inventáře.
+       Hráč si může vybrat předmět z inventáře a použít ho v místnosti.
+       Pokud hráč nemá žádné předměty v inventáři nebo vybere neexistující předmět,vrátí odpovídající zprávu.
+       */
     @Override
     public String execute() {
         Mistnost mojePozice = hrac.getMojePozice();

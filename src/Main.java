@@ -6,7 +6,7 @@ import java.io.IOException;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-Console c = new Console();
+Console c = new Console();// Hlavní třída spouštějící hru.
 
         try {
             c.start();

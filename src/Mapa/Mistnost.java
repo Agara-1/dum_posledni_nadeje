@@ -9,7 +9,8 @@ import Veci.Predmet;
 import java.util.*;
 
 
-
+//Třída reprezentující místnost ve hře.
+//Místnost může obsahovat postavy a předměty, a hráč může do ní vstoupit.
 public class Mistnost {
    private String nazev;
    private ArrayList<Postava> postavyVMistnosti;
@@ -62,6 +63,9 @@ public class Mistnost {
    }
 
    Postava vezen = null;
+
+   //Metoda pro vstup hráče do místnosti.
+   //Pokud hráč vstoupí do místnosti "Obývák" nebo "Chodba" a rádio je zapnuto, hráč uvidí vězně a interakci s psychologem.
    public void vstoupit(Hrac hrac) {
       Mistnost mojePozice = hrac.getMojePozice();
       if ((mojePozice.getNazev().equals("Obyvak") || mojePozice.getNazev().equals("Chodba")) && Akumulatory.radioZapnuto) {

@@ -2,8 +2,9 @@ package Postavy;
 
 import Mapa.Mistnost;
 
-import java.util.ArrayList;
 
+//Třída reprezentující postavu kuchařky ve hře.
+//Kuchařka je typ postavy, která se nachází v určité místnosti a má připravené repliky, které pronáší, když s ní hráč komunikuje.
 public class Kucharka extends Postava {
     public Kucharka(String jmeno, String povolani, String text, Mistnost mistnost) {
         super(jmeno,  text, mistnost);
@@ -13,7 +14,7 @@ public class Kucharka extends Postava {
     public String toString() {
         return "Kucharka";
     }
-
+//Vrací pole hlášek, které kuchařka může říct během hry.
     @Override
     protected String[] getHlasky() {
         return new String[]{

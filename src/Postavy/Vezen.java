@@ -2,8 +2,7 @@ package Postavy;
 
 import Mapa.Mistnost;
 
-import java.util.ArrayList;
-
+//reprezentuje postavu vězně jménem Jack ve hře.
 public class Vezen extends Postava {
     public Vezen(String jmeno, String povolani, String text, Mistnost mistnost) {
         super("Jack", text, mistnost);
@@ -14,6 +13,7 @@ public class Vezen extends Postava {
         return "Vezen";
     }
 
+    //Vrací pole hlášek, které vězeň říká hráči během konverzace.
     @Override
     protected String[] getHlasky() {
         return new String[]{

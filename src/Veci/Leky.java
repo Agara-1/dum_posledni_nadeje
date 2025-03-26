@@ -1,12 +1,16 @@
 package Veci;
 import Mapa.Mistnost;
 import Postavy.Hrac;
+
+
+//Třída představující léky, které může hráč použít k obnovení svého zdraví.
 public class Leky extends Predmet {
     public Leky(String nazev) {
         super("Leky");
     }
 
-
+//Použití léků hráčem.
+//Léky lze použít pouze v místnosti "Chodba" a pokud hráč nemá plné HP.
     @Override
     public String pouziti(Mistnost m, Hrac h) {
         m = h.getMojePozice();

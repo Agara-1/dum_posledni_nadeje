@@ -8,6 +8,9 @@ import java.util.ArrayList;
 
 import java.util.Scanner;
 
+
+//Třída implementující příkaz pro útok na postavu v místnosti.
+// * Tato třída umožňuje hráči zaútočit na postavu, pokud má zbraň a v místnosti se nachází postavy.
 public class Utok implements Command {
 
     private Hrac hrac;
@@ -21,13 +24,17 @@ public class Utok implements Command {
         this.sc = new Scanner(System.in);
     }
 
+    /*Metoda pro vykonání příkazu útoku na postavu.
+      Hráč může zaútočit na postavu, pokud má zbraň a v místnosti jsou postavy.
+      Pokud hráč zaútočí na postavu, která je psycholog, hra je dokončena s vítězstvím.
+      Pokud zaútočí na jinou postavu, hra končí prohrou.*/
     @Override
     public String execute() {
         Mistnost mojePozice = hrac.getMojePozice();
         ArrayList<Postava> postavyVMistnosti = mojePozice.getPostavyVMistnosti();
         Postava cil = null;
 
-
+// Kontrola, zda má hráč zbraň
         boolean maZbran = false;
         for (Predmet p : hrac.getInventar()) {
             if (p instanceof Zbran) {
@@ -35,7 +42,7 @@ public class Utok implements Command {
                 break;
             }
         }
-
+// Pokud má hráč zbraň a v místnosti jsou postavy
         if (maZbran && !postavyVMistnosti.isEmpty()) {
             System.out.println("Na koho chcete zaútočit? Dostupné postavy:");
             for (Postava p : postavyVMistnosti) {

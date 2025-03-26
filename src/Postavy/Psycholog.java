@@ -3,7 +3,8 @@ package Postavy;
 import Mapa.Mistnost;
 
 import java.util.ArrayList;
-
+//Třída reprezentující postavu psychologa.
+//Psycholog během hry poskytuje hráči znepokojivé informace a indicie
 public class Psycholog extends Postava {
     public Psycholog(String jmeno, String povolani, String text, Mistnost mistnost) {
         super("Petr", text, mistnost);
@@ -13,7 +14,7 @@ public class Psycholog extends Postava {
     public String toString() {
         return "Psycholog";
     }
-
+// Vrací seznam hlášek psychologa.
     @Override
     protected String[] getHlasky() {
         return new String[]{
