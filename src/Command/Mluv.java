@@ -4,8 +4,11 @@ import Mapa.Mistnost;
 import Postavy.*;
 import java.util.Scanner;
 
-//Třída implementující příkaz pro mluvení s postavami v místnosti.
-//Umožňuje hráči vybrat postavu v místnosti a zahájit konverzaci.
+/**
+ * Třída implementující příkaz pro mluvení s postavami v místnosti.
+ * Umožňuje hráči vybrat postavu v místnosti a zahájit konverzaci.
+ */
+
 public class Mluv implements Command {
 
     private Scanner sc;
@@ -17,9 +20,12 @@ public class Mluv implements Command {
         this.sc = new Scanner(System.in);
     }
 
-    /* Metoda pro vykonání příkazu mluvení s postavou v aktuální místnosti.
-       Hráč si může vybrat postavu, se kterou chce komunikovat.
-       Pokud v místnosti není žádná postava nebo vybere neexistující postavu, vrátí odpovídající zprávu.*/
+    /**
+     *  Metoda pro vykonání příkazu mluvení s postavou v aktuální místnosti.
+     *  Hráč si může vybrat postavu, se kterou chce komunikovat.
+     *  Pokud v místnosti není žádná postava nebo vybere neexistující postavu, vrátí odpovídající zprávu.
+     */
+
     @Override
     public String execute() {
         Mistnost mojePozice = hrac.getMojePozice();

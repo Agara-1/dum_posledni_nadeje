@@ -5,7 +5,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-//Tento test se zaměřuje na ukončení hry.
+/**
+ * Tento test se zaměřuje na ukončení hry.
+ */
+
 public class KonecTest {
     private Console console;
     private KonecHry konecHry;
@@ -16,9 +19,10 @@ public class KonecTest {
         konecHry = new KonecHry(console);
     }
 
-    //Testuje metodu.
-    // Tento test ověřuje, že metoda správně vrací
-    // zprávu "Hra byla ukoncena" při ukončení hry.
+    /**
+     * Testuje metodu.
+     *     Tento test ověřuje, že metoda správně vrací zprávu "Hra byla ukoncena" při ukončení hry.
+     */
     @Test
     void testVraciSpravnouZpravu() {
         String vysledek = konecHry.execute();

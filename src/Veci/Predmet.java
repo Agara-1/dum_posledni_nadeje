@@ -3,7 +3,9 @@ import Postavy.Hrac;
 import Mapa.Mistnost;
 import Postavy.Hrac;
 
-//Abstraktní třída reprezentující předměty ve hře.
+/**
+ * Abstraktní třída reprezentující předměty ve hře.
+ */
 public abstract class  Predmet {
     protected String nazev;
 
@@ -15,8 +17,10 @@ public abstract class  Predmet {
         return nazev;
     }
 
-    //Abstraktní metoda pro použití předmětu.
-    public abstract String pouziti(Mistnost m, Hrac h);
+    /**
+     * Abstraktní metoda pro použití předmětu.
+     */
+        public abstract String pouziti(Mistnost m, Hrac h);
 
 
 }

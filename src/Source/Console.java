@@ -9,7 +9,10 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Scanner;
 
-//Konzolová třída pro správu hry.
+/**
+ * Třída pro správu hry.
+ */
+
 public class Console {
     private boolean exit = false;
     private HashMap<String, Command> prikazy = new HashMap<>();
@@ -17,10 +20,16 @@ public class Console {
     private Scanner sc = new Scanner(System.in);
 
 
-    //Inicializuje hru a nastaví počáteční hodnoty.
+    /**
+     * Inicializuje hru a nastaví počáteční hodnoty.
+     */
+
 public void inicializace(){
 
-    //Inicializace místností, postav a předmětů ve hře
+    /**
+     * Inicializace místností, postav a předmětů ve hře.
+     */
+
 
     Mistnost chodba  = sm.getMistnost("Chodba");
     Mistnost sklep  = sm.getMistnost("Sklep");
@@ -68,7 +77,10 @@ obyvak.pridaniPostavy(vezen);
 
 }
 
-// Metoda pro zpracování příkazů hráče.
+    /**
+     * Metoda pro zpracování příkazů hráče.
+      */
+
 public void delejPrikaz() throws IOException {
     System.out.println(sm.getSvet());
     System.out.println(">>");
@@ -83,7 +95,10 @@ public void delejPrikaz() throws IOException {
     }
 }
 
-// Spouští hlavní smyčku hry.
+    /**
+     * Spouští hlavní smyčku hry.
+     */
+
 public void start() throws IOException {
     System.out.println(pribeh());
     inicializace();
@@ -92,11 +107,19 @@ public void start() throws IOException {
     }while(!exit);
 
 }
-    // Ukončí hru.
+
+    /**
+     * Ukončí hru.
+      */
+
 public void ukoncitHru() {
     exit = true;
 }
-//  úvodní text hry.
+
+    /**
+     * úvodní text hry.
+      */
+
     private String pribeh() {
     return "               **NOUZOVÉ HLÁŠENÍ** " +
             "   \nToto není cvičení! Byly odpáleny jaderné hlavice.\n" +

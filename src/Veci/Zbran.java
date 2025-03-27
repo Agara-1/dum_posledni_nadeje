@@ -2,15 +2,23 @@ package Veci;
 import Mapa.Mistnost;
 import Postavy.Hrac;
 
-//Třída reprezentující zbraň jako předmět.
+/**
+ * Třída reprezentující zbraň jako předmět.
+ */
 public class Zbran extends Predmet {
 
-    //Konstruktor pro vytvoření zbraně.
+    /**
+     * Konstruktor pro vytvoření zbraně.
+     */
+
     public Zbran(String nazev) {
         super("Macete");
     }
 
-    //Použití zbraně.
+    /**
+     * Použití zbraně.
+     */
+
     @Override
     public String pouziti(Mistnost m, Hrac h) {
         h.getInventar().remove(this);

@@ -1,7 +1,11 @@
 package Command;
 
 import Source.Console;
-// Třída implementující příkaz pro ukončení hry.
+
+/**
+ * Třída implementující příkaz pro ukončení hry.
+  */
+
 public class KonecHry implements Command {
     private Console console;
 
@@ -9,8 +13,11 @@ public class KonecHry implements Command {
         this.console = console;
     }
 
-    // Metoda pro vykonání příkazu ukončení hry.
-    // Zavolá metodu pro ukončení hry a vrátí zprávu o ukončení hry.
+    /**
+     *   Metoda pro vykonání příkazu ukončení hry.
+     *     Zavolá metodu pro ukončení hry a vrátí zprávu o ukončení hry.
+      */
+
     @Override
     public String execute() {
         console.ukoncitHru();

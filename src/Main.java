@@ -2,11 +2,12 @@ import Source.Console;
 
 import java.io.IOException;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+/**
+ * Hlavní třída spouštějící hru.
+ */
 public class Main {
     public static void main(String[] args) {
-Console c = new Console();// Hlavní třída spouštějící hru.
+Console c = new Console();
 
         try {
             c.start();

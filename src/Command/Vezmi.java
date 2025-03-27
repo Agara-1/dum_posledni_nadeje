@@ -5,8 +5,10 @@ import Postavy.Hrac;
 import Veci.Predmet;
 import java.util.Scanner;
 
-//Třída implementující příkaz pro sebrání předmětu v místnosti.
-//Tato třída umožňuje hráči vzít předmět, který se nachází v místnosti, pokud byla místnost prozkoumána.
+/**
+ * Třída implementující příkaz pro sebrání předmětu v místnosti.
+ * Tato třída umožňuje hráči vzít předmět, který se nachází v místnosti, pokud byla místnost prozkoumána.
+ */
 public class Vezmi implements Command {
 
     private Hrac hrac;;
@@ -18,9 +20,12 @@ public class Vezmi implements Command {
     }
 
 
-//Metoda pro vykonání příkazu vzít předmět.
-//Pokud místnost obsahuje předmět, který lze vzít, a byla prozkoumána,
-//hráč tento předmět vezme, jinak se zobrazí odpovídající zpráva.
+    /**
+     * Metoda pro vykonání příkazu vzít předmět.
+     * Pokud místnost obsahuje předmět, který lze vzít, a byla prozkoumána,
+     * hráč tento předmět vezme, jinak se zobrazí odpovídající zpráva.
+     *
+     */
     @Override
     public String execute() {
         Mistnost mojePozice = hrac.getMojePozice();

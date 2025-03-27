@@ -7,8 +7,10 @@ import Veci.Zbran;
 
 import java.util.ArrayList;
 
-//Třída reprezentující hráče ve hře.
-// * Hráč má jméno, životy, inventář a aktuální pozici ve hře (mistnost).
+/**
+ * Třída reprezentující hráče ve hře.
+ * Hráč má jméno, životy, inventář a aktuální pozici ve hře (mistnost).
+ */
 public class Hrac {
 
     private String jmeno;
@@ -29,33 +31,48 @@ public class Hrac {
         this.hp = 80;
     }
 
-//Získá aktuální místnost, ve které se hráč nachází.
+    /**
+     *  Získá aktuální místnost, ve které se hráč nachází.
+     */
     public Mistnost getMojePozice() {
         return mojePozice;
     }
 
-    //Nastaví novou pozici hráče, tedy novou místnost, do které se hráč přesune.
+    /**
+     *  Nastaví novou pozici hráče, tedy novou místnost, do které se hráč přesune.
+     */
     public void setMojePozice(Mistnost mistnost) {
         this.mojePozice = mistnost;
     }
-//Získá aktuální zdraví hráče.
+
+    /**
+     *  Získá aktuální zdraví hráče.
+     */
+
     public int getHp() {
         return hp;
     }
-//Přidá předmět do inventáře hráče.
+
+    /**
+     * Přidá předmět do inventáře hráče.
+     */
+
     public void vzitPredmet(Predmet p) {
         inventar.add(p);
     }
 
-//Vylečí hráče, přičemž maximální zdraví je 100.
+    /**
+     *    Vylečí hráče, přičemž maximální zdraví je 100.
+     */
+
     public void vylecit(int hodnota) {
         this.hp = Math.min(100, this.hp + hodnota);
     }
 
-//Získá inventář hráče, tedy seznam předmětů, které má u sebe.
-    public ArrayList<Predmet> getInventar() {
+    /**
+     *   Získá inventář hráče, tedy seznam předmětů, které má u sebe.
+     */
+     public ArrayList<Predmet> getInventar() {
         return inventar;
     }
-
-
 }

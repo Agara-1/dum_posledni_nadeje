@@ -4,19 +4,28 @@ import Postavy.Hrac;
 import Mapa.Mistnost;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-//Testují se zde základní funkce hráče jako nastavení počáteční místnosti a léčení.
+
+/**
+ * Testují se zde základní funkce hráče jako nastavení počáteční místnosti a léčení.
+ */
     public class HracTest {
 
-        //Testuje, zda hráč při vytvoření správně začíná ve zvolené místnosti.
-        //V tomto testu se ověřuje, že hráč je na začátku v místnosti "Chodba".
-        @Test
+    /**
+     * Testuje, zda hráč při vytvoření správně začíná ve zvolené místnosti.
+     * V tomto testu se ověřuje, že hráč je na začátku v místnosti "Chodba".
+
+     */
+      @Test
         void testZacatecniMistnost() {
             Hrac hrac = new Hrac("TestHrac", new Mistnost("Chodba"));
             assertEquals("Chodba", hrac.getMojePozice().getNazev(), "Hráč by měl začínat v Chodbě.");
         }
 
 
-//Ověřuje, že životy hráče nepřesáhnou maximální hodnotu 100.
+/**
+ * Ověřuje, že životy hráče nepřesáhnou maximální hodnotu 100.
+ */
+
         @Test
         void testLeceni() {
             Hrac hrac = new Hrac("TestHrac", new Mistnost("Chodba"));

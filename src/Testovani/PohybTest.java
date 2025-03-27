@@ -9,7 +9,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-//Tento test ověřuje správné přesuny hráče do sousedních místností, chování při pokusu o přesun do neplatných nebo neexistujících místností.
+/**
+ * Tento test ověřuje správné přesuny hráče do sousedních místností, chování při pokusu o přesun do neplatných nebo neexistujících místností.
+ */
 public class PohybTest {
     private SvetovaMapa mapa;
     private Hrac hrac;
@@ -20,8 +22,11 @@ public class PohybTest {
         hrac = new Hrac("TestHrac", mapa.getMistnost("Chodba"));
     }
 
-    //estuje přesun hráče do sousední místnosti.
-    //Ověřuje, že hráč správně přejde do sousední místnosti, pokud existuje.
+    /**
+     * Testuje přesun hráče do sousední místnosti.
+     * Ověřuje, že hráč správně přejde do sousední místnosti, pokud existuje.
+     */
+
     @Test
     void testPresunDoSousedniMistnosti() {
         hrac.setMojePozice(mapa.getMistnost("Chodba"));
@@ -34,9 +39,11 @@ public class PohybTest {
         assertEquals("Sklep", hrac.getMojePozice().getNazev(), "Hráč by měl být ve Sklepě.");
     }
 
-    //Testuje neplatný pokus o přesun do místnosti, která není sousední.
-    //Ověřuje, že pokus o přesun mezi místnostmi, které nejsou sousední, neproběhne.
-    @Test
+    /**
+     * Testuje neplatný pokus o přesun do místnosti, která není sousední.
+     * Ověřuje, že pokus o přesun mezi místnostmi, které nejsou sousední, neproběhne.
+     */
+     @Test
     void testNeplatnyPresun() {
         hrac.setMojePozice(mapa.getMistnost("Pokoj1"));
         Mistnost nesousedniMistnost = mapa.getMistnost("Pokoj2"); // Pokoj1 a Pokoj2 nejsou propojeny
@@ -46,9 +53,11 @@ public class PohybTest {
         assertFalse(jeSousedni, "Pokoj1 a Pokoj2 by neměly být sousední místnosti.");
     }
 
-//Testuje chování při pokusu o přístup k neexistující místnosti.
-//Ověřuje, že pokus o získání neexistující místnosti vrátí hodnotu null.
-    @Test
+    /**
+     * Testuje chování při pokusu o přístup k neexistující místnosti.
+     * Ověřuje, že pokus o získání neexistující místnosti vrátí hodnotu null.
+     */
+       @Test
     void testNeexistujiciMistnost() {
         Mistnost neexistujici = mapa.getMistnost("NeznamaMistnost");
         assertNull(neexistujici, "Neznámá místnost by měla vrátit null.");

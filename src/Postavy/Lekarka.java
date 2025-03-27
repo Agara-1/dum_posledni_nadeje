@@ -3,8 +3,11 @@ package Postavy;
 import Mapa.Mistnost;
 
 import java.util.ArrayList;
-//Třída reprezentující postavu lékařky ve hře.
-//Lékařka je typ postavy, která může hráči nabídnout informace nebo pomoc.
+
+/**
+ * Třída reprezentující postavu lékařky ve hře.
+ * Lékařka je typ postavy, která může hráči nabídnout informace nebo pomoc.
+ */
 public class Lekarka extends Postava {
 
     public Lekarka(String jmeno, String povolani, String text, Mistnost mistnost) {
@@ -15,7 +18,11 @@ public class Lekarka extends Postava {
     public String toString() {
         return "Lekarka" ;
     }
-//Vrací pole hlášek, které lékařka může říct během hry.
+
+    /**
+     * Vrací pole hlášek, které lékařka může říct během hry.
+     */
+
     @Override
     protected String[] getHlasky() {
         return new String[]{
